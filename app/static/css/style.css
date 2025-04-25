@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.top-header {
+    height: 15vh;
+    width: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.json-icon {
+    color: #1e88e5;
+    width: 32px;
+    height: 32px;
+}
+
+.header-content h2 {
+    color: black;
+    font-size: 24px;
+}
+
+/* Divider line */
+.divider-line {
+    border: none;
+    border-top: 1px solid #d3d3d3;
+    width: 100%;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Intro section */
+.intro h1 {
+    color: #1e88e5;
+    margin-top: 2vh;
+}
+
+.intro p {
+    color: black;
+    margin: 10px 0;
+}
+
+.file-name {
+    background-color: #f8f9fa;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+/* Container for Left and Right Panels */
+.container {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    max-height: 600px;
+}
+
+.right {
+    max-height: 600px;
+}
+
+/* Buttons */
+.button {
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: #1565c0;
+}
+
+/* Preview boxes */
+.preview, .formatted-preview {
+    border: 2px solid #1e88e5;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    font-family: monospace;
+    min-height: 500px;
+    max-height: 600px;
+}
